@@ -3,13 +3,23 @@
 <html>
 <head>
  <link rel="stylesheet" type="text/css" href="css/styles.css">
- <script src="script.js"></script>
+	<script src="js/script.js"></script>
+ 
 </head>
 <body>
-<div class="home">
-	<div class ="shin">
-		<img src="image/shingif.gif" height="100px" >
+	<p><button onclick="Move()">click me</button></p>
+	
+<div id="home">
+	<div class="shinchan">
+		<img src="image/shingif.gif" id="shin">
 	</div>
+	<svg viewbox="0 0 10 10" id="kite">
+  	<polyline fill="red" points="5 0 9 4 5 8 1 4" />
+  	<polyline points="5 0 5.05 0.05 5.05 7.95 5 8 4.95 7.95 4.95 0.05" />
+  	<path d="m 1.05 4.05 Q 5 1 8.95 4.05" fill="none" stroke-width="0.1" stroke="#000" />
+  	<polyline fill="pink" points ="5 8 6 9 4 9" />
+  	<path d="m 5 8 Q 6 8 7 9 " fill="none" stroke-width="0.1" stroke="#000" />
+  	</svg>
 </div>
 </body>
 </html>
