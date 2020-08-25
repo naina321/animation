@@ -1,3 +1,22 @@
+/*style button tag*/
+#btn
+{
+  margin-left: 45vw;
+  background-color: #ffe6f2;
+  border-radius:25% 0%;
+  color:red;
+  padding :4px 50px;
+  box-shadow: 0 9px #999;
+  border-color: #4d0026;
+  border-width: 5px;
+  transition-duration: 0.4s;
+  
+}
+#btn : hover{
+    background-color: #e6ffe6;
+    border-radius: 50%;
+}
+/*add background*/
 body {
 	background-image: url('../image/full.jpg');
     background-size: 100vw 100vh;
@@ -5,19 +24,32 @@ body {
 	position: relative;
 	
 }
+/*set sinchan postion*/
 #shin {
 	position: absolute;
-	height: 140px;
-	width: 140px;
+	height: 150px;
+	width: 150px;
 	right:0px;
-	top :480px;
+	top :450px;
     }
-
-	#kite
-	{
+/*set kite postion*/
+#kite{
 	width:100px;
-    height:200px;
+    height:150px;
     position: absolute;
-    top:400px;
-    right:100px;
+    }
+ /*animate kite colors*/
+#color{
+    animation-name: kitecolor ;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    }
+@keyframes kitecolor
+    {
+    	0% {fill: pink;}
+    	20% {fill: orange;}
+    	40% {fill: green;}
+    	60% {fill: red;}
+    	80% {fill: grey;}
+    	100%{fill:blue;}
     }

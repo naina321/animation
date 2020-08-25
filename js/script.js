@@ -1,19 +1,40 @@
 function Move()
 {
-  var elem = document.getElementById("shin");  
-  var kit = document.getElementById("kite"); 
-  var pos = 0;
-  var id = setInterval(frame, 7);
-  function frame() {
-    if (pos ==950) {
-     pos = 0;
-      /*clearInterval(id);*/
-    } else {
-      pos++; 
-      elem.style.right = pos + 'px'; 
-      kit.style.top=pos+"px";
-      kit.style.left=pos+"px";
-
+    var elem = document.getElementById("shin");  
+    var kit = document.getElementById("kite"); 
+    var pos1 = 0;
+    var id1 = setInterval(frame1,9) /*function for shinchan*/
+    function frame1() 
+    {
+        if (pos1 == 520)
+        {
+          pos1 = 0;
+        }
+        else 
+        {
+          pos1++; 
+          elem.style.right= pos1 + 'px';
+        }
     }
-  }
+    var pos2=0;
+    var id2 = setInterval(frame2,130) /*function for kite*/
+    function frame2()
+    {
+       if (pos2 == 34)
+       {
+         pos2 = 0;
+       }
+       else 
+       {
+         pos2++; 
+         kit.style.top=pos2+"vw";
+         kit.style.left=pos2+10+"vw";
+       }
+    }
+}
+function notmove()
+{
+  /*var elem = document.getElementById("shin");  
+  var kit = document.getElementById("kite"); */
+
 }
