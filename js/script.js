@@ -6,7 +6,7 @@ function Move()
     var id1 = setInterval(frame1,9) /*function for shinchan*/
     function frame1() 
     {
-        if (pos1 == 520)
+       if(pos1==450)
         {
           pos1 = 0;
         }
@@ -17,7 +17,7 @@ function Move()
         }
     }
     var pos2=0;
-    var id2 = setInterval(frame2,130) /*function for kite*/
+    var id2 = setInterval(frame2,120) /*function for kite*/
     function frame2()
     {
        if (pos2 == 34)
@@ -31,10 +31,4 @@ function Move()
          kit.style.left=pos2+10+"vw";
        }
     }
-}
-function notmove()
-{
-  /*var elem = document.getElementById("shin");  
-  var kit = document.getElementById("kite"); */
-
 }
